@@ -1,0 +1,3 @@
+to export vscode Extensions command: code --list-extensions > extensions-list.txt
+
+to import Extensions: cat extensions-list.txt | xargs -L 1 code --install-extension
