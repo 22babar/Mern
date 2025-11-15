@@ -1,6 +1,5 @@
-import mongoose, { Cursor } from 'mongoose';
-import User from './User';
-import { bindAll } from 'express-validator/lib/utils';
+import mongoose from 'mongoose';
+
 const ProfileSchema = new mongoose.Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId,
@@ -109,3 +108,5 @@ const ProfileSchema = new mongoose.Schema({
         }
     },
 });
+
+export default mongoose.model('profile', ProfileSchema); 
